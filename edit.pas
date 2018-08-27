@@ -10,7 +10,8 @@ type
   TForm1 = class(TForm)
     Edit: TEdit;
     Tlacitko: TButton;
-    Label1: TLabel;
+    Napis: TLabel;
+    procedure TlacitkoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +24,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.TlacitkoClick(Sender: TObject);
+begin
+  Napis.Caption := Edit.Text;
+end;
 
 end.

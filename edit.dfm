@@ -13,18 +13,21 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
-    Left = 184
+  object Napis: TLabel
+    Left = 80
     Top = 304
-    Width = 281
-    Height = 13
-    Caption = 'Label1'
+    Width = 465
+    Height = 49
+    AutoSize = False
+    Color = clHighlightText
+    ParentColor = False
   end
   object Edit: TEdit
     Left = 80
     Top = 56
     Width = 465
     Height = 161
+    AutoSize = False
     TabOrder = 0
     Text = 'Napi'#353' text pro editaci'
   end
@@ -35,5 +38,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'P'#345'epi'#353' text'
     TabOrder = 1
+    OnClick = TlacitkoClick
   end
 end

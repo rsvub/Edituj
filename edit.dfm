@@ -52,6 +52,7 @@ object Form1: TForm1
       Height = 25
       Caption = 'Otev'#345'i Okno'
       TabOrder = 2
+      OnClick = OtevriOknoClick
     end
   end
   object Tlacitko: TButton

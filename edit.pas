@@ -20,6 +20,7 @@ type
     procedure TlacitkoClick(Sender: TObject);
     procedure CasTimer(Sender: TObject);
     procedure KonecClick(Sender: TObject);
+    procedure OtevriOknoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,6 +45,11 @@ end;
 procedure TForm1.KonecClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TForm1.OtevriOknoClick(Sender: TObject);
+begin
+  Okno.Show;
 end;
 
 procedure TForm1.TlacitkoClick(Sender: TObject);

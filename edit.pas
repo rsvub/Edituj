@@ -11,10 +11,15 @@ type
   TForm1 = class(TForm)
     Edit: TEdit;
     Tlacitko: TButton;
-    Napis: TLabel;
-    Image1: TImage;
     Panel1: TPanel;
+    Napis: TLabel;
+    Volba: TCheckBox;
+    Cas: TTimer;
+    Konec: TButton;
+    OtevriOkno: TButton;
     procedure TlacitkoClick(Sender: TObject);
+    procedure CasTimer(Sender: TObject);
+    procedure KonecClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,6 +32,19 @@ var
 implementation
 
 {$R *.dfm}
+
+uses edit2;
+
+procedure TForm1.CasTimer(Sender: TObject);
+begin
+  Konec.Visible := True;
+  Cas.Enabled := True;
+end;
+
+procedure TForm1.KonecClick(Sender: TObject);
+begin
+  Close;
+end;
 
 procedure TForm1.TlacitkoClick(Sender: TObject);
 begin
